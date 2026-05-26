@@ -1,0 +1,29 @@
+{
+  "article_input_dir": "data/inbox",
+  "outbox_dir": "data/outbox",
+  "processed_dir": "data/processed",
+  "failed_dir": "data/failed",
+  "database_path": "data/service.sqlite3",
+  "run_once": true,
+  "poll_interval_seconds": 60,
+  "llm": {
+    "provider": "ollama",
+    "api_key": "",
+    "model": "hhao/qwen2.5-coder-tools",
+    "base_url": "http://localhost:11434"
+  },
+  "telegram": {
+    "enabled": false,
+    "bot_token": "",
+    "chat_ids": []
+  },
+  "email": {
+    "enabled": false,
+    "smtp_host": "smtp.office365.com",
+    "smtp_port": 587,
+    "username": "",
+    "password": "",
+    "from_address": "",
+    "to_addresses": []
+  }
+}
